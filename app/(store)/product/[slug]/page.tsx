@@ -30,8 +30,8 @@ async function ProductPage({
     <div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div
-            className={`relative aspect-square overflow-hidden rounded-lg
-                shadow-lg border-2 border-gray-400 shadow-gray-500 
+            className={`relative aspect-square overflow-hidden rounded-lg mt-4
+                shadow-lg border-2 border-gray-400 shadow-gray-500 ml-4 
                  ${isOutOfStock ? "opacity-50" : ""}`}
             >
                 {product.image && (
@@ -50,9 +50,9 @@ async function ProductPage({
                     </div>
                 )}  
             </div>
-            <div className="felx flex-col justify-between">
+            <div className="felx flex-col justify-between mt-4">
                 <div>
-                    <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
+                    <h1 className="text-4xl font-bold mb-4">{product.name}</h1>
                     <div className="text-xl font-semibold mb-4 text-green-600">
                         Price: {product.price?.toFixed(2)}Rs
                     </div>
